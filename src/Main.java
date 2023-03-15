@@ -3,13 +3,13 @@
  */
 public class Main {
     public static void main(String[] args) {
-        long numInit = 7893823445L;
-        long numInter = numInit;
+        final long NUM = 7893823445L;
+        long numInter = NUM;
         long sum = 0;
         do {
             sum += (numInter % 10);
             numInter = numInter / 10;
         } while (numInter != 0);
-        System.out.printf("Сумма цифр числа %d равна %d", numInit, sum);
+        System.out.printf("Сумма цифр числа %d равна %d", NUM, sum);
     }
 }
